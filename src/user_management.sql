@@ -3,11 +3,20 @@
 .mode column
 
 -- Enable foreign key support
+PRAGMA FOREIGN_KEY = ON;
 
 -- User Management Queries
 
 -- 1. Retrieve all members
 -- TODO: Write a query to retrieve all members
+
+SELECT 
+    member_id,
+    first_name,
+    last_name,
+    email,
+    join_date
+FROM members;
 
 -- 2. Update a member's contact information
 -- TODO: Write a query to update a member's contact information
